@@ -134,6 +134,7 @@ variable "containers" {
       period_seconds        = optional(number, null)
       http_get = optional(object({
         path = optional(string)
+        port = optional(number)
         http_headers = optional(list(object({
           name  = string
           value = string
@@ -156,6 +157,7 @@ variable "containers" {
       period_seconds        = optional(number, null)
       http_get = optional(object({
         path = optional(string)
+        port = optional(number)
         http_headers = optional(list(object({
           name  = string
           value = string
